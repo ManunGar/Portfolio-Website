@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'oswald';
+    src: url('./fonts/Oswald-VariableFont_wght.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'bebas';
+    src: url('./fonts/BebasNeue-Regular.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'yanone';
+    src: url('./fonts/YanoneKaffeesatz-VariableFont_wght.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --mainBlack: #131314;
+  --mainWhite: #ebebeb;
+  --mainLightGray: #b4b4b4;
+  --mainDarkGray: #40444d;
+  --mainDarkGreen: #0d3324;
+  --mainLightGreen: #2b6d52;
 }
 
-.App-link {
-  color: #61dafb;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: var(--mainWhite);
+    color: var(--mainWhite);
+    font-family:'bebas';
+    font-size: 16px;
+}
+.content {
+    width: 100%;
+    margin:auto;
 }
