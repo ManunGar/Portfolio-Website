@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import services from '../jsons/services.json';
 import '../static/styles/home.css';
 
 
@@ -20,7 +21,6 @@ export default function Home() {
       showCursor: false,
       contentType: 'html',
     });
-
     return () => {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
@@ -93,6 +93,28 @@ export default function Home() {
         </div>
         <div>
           <img src={require('../static/images/me.png')} alt='Sobre mí' />
+        </div>
+      </section>
+      {/* SERVICIOS */}
+      <section className='servicesSection'>
+        <div className='titleServiceSection'>
+          <div>
+            <div className='bar'></div><p>¿Mis servicios?</p>
+          </div>
+          <h1>Productos <br /> Que Ofrezco</h1>
+        </div>
+        <div className='servicesContainer'>
+          {services.map(service => (
+            <div key={service.id} className='serviceCard'>
+              <div className='serviceCardFront'>
+                <h2>{service.title}</h2>
+                <span>{service.phrase}</span>
+              </div>
+              <div className='serviceCardBack'>
+                <p>{service.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>
