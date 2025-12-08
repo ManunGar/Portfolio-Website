@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Desarrollo Web y Multiplataforma",
+        "description": "Creo aplicaciones modernas, rápidas y seguras utilizando tecnologías actuales. Desde webs corporativas hasta sistemas full-stack y apps multiplataforma, enfocadas en rendimiento, usabilidad y escalabilidad.",
+        "icon": "../static/images/services/development.png",
+        "phrase": "Construyo soluciones digitales que funcionan en cualquier dispositivo."
+    },
+    {
+        "id": 2,
+        "title": "Automatizaciones Inteligentes",
+        "description": "Desarrollo scripts y sistemas automatizados que ahorran tiempo, eliminan tareas repetitivas y mejoran la eficiencia operativa. Integración con APIs, bots, procesos internos y flujos personalizados.",
+        "icon": "../static/images/services/automatizaciones.png",
+        "phrase": "Haz que la tecnología trabaje por ti, no al revés."
+    },
+    {
+        "id": 3,
+        "title": "Diseño Creativo UI/UX",
+        "description": "Diseño interfaces limpias, intuitivas y orientadas a la experiencia del usuario. Combino estética moderna con funcionalidad para crear productos digitales atractivos y fáciles de usar.",
+        "icon": "../static/images/services/design.png",
+        "phrase": "Cada diseño cuenta una historia; yo te ayudo a contar la tuya."
+    },
+    {
+        "id": 4,
+        "title": "Documentación Técnica y Análisis de Sistemas",
+        "description": "Analizo, organizo y documento proyectos existentes para facilitar su mantenimiento, escalabilidad y comprensión. Ideal para equipos que necesitan claridad en sistemas heredados o en crecimiento.",
+        "icon": "../static/images/services/documents.png",
+        "phrase": "Documentación clara, sistemas más sólidos."
+    }
+]
