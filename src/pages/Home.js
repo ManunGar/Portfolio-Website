@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import ServicesCard from '../components/serviceCard/ServiceCard';
 import services from '../jsons/services.json';
 import '../static/styles/home.css';
 
@@ -105,15 +106,7 @@ export default function Home() {
         </div>
         <div className='servicesContainer'>
           {services.map(service => (
-            <div key={service.id} className='serviceCard'>
-              <div className='serviceCardFront'>
-                <h2>{service.title}</h2>
-                <span>{service.phrase}</span>
-              </div>
-              <div className='serviceCardBack'>
-                <p>{service.description}</p>
-              </div>
-            </div>
+            <ServicesCard key={service.id} service={service} />
           ))}
         </div>
       </section>
