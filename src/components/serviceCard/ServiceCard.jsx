@@ -10,6 +10,7 @@ const ServicesCard = ({ service }) => {
                 <span>{service.phrase}</span>
             </div>
             <div className='serviceCardBack'>
+                <h4>{service.title}</h4>
                 <p>{service.description}</p>
             </div>
         </div>
